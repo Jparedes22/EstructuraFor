@@ -11,19 +11,16 @@ import java.util.Scanner;
  *
  * @author Usuario DAM 1
  */
-public class TablaDeMultiplicar {
+public class Factoial {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num;
-        do {
-            System.out.println("Introduce un número entre el 0 y el 10");
-            num = sc.nextInt();
-        } while (num < 0 || num > 10);
-
-        for (int i = 0; i <= 10; i++) {
-            int multi = num * i;
-            System.out.printf("%d x %d=%d%n", num, i, multi);
+        
+        System.out.println("Introduce un número para calcular su factorial");
+        int num = sc.nextInt();
+        for (int i = num-1; i >= 1; i--) {
+             num=num*i;
+            System.out.println(num);
         }
 
     }
