@@ -12,16 +12,19 @@ import java.util.Scanner;
  * @author neosu
  */
 public class InversaPalabra {
+
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String palabra;
-        String palabraInvertida="";
+        String palabraInvertida = "";
         System.out.println("Introduce una palabra");
-        palabra=sc.next();
-         for (int i = palabra.length()-1; i>=0; i--){
-            palabraInvertida += palabra.charAt(i);
+        palabra = sc.next();
+        int longitud = palabra.length();
+
+        for (int i = longitud - 1; i >= 0; i--) {
+
+            System.out.print(palabra.charAt(i));
         }
- 
-        System.out.println("La palabra invertida es:\n"+ palabraInvertida);
+
     }
 }
